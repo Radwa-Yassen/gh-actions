@@ -1,0 +1,10 @@
+name: First Workflow
+on: workflow_dispatch  #when to run also with this we can run it manually
+jobs:
+  first-job:
+    runs-on: ubuntu-latest # the env. to run on
+    steps:
+      - name: print greeting
+        run: echo "Hello world!"
+      - name: print goodbye
+        run: echo "Done - bye!"
